@@ -15,6 +15,20 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+	 <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://myserver:9001
+                </sonar.host.url>
+            </properties>
+        </profile>
+     </profiles>
 	<profiles>
         <profile>
             <id>sonar</id>
